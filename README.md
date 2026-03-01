@@ -60,9 +60,10 @@ calendar/
 ├── calendar.php            # Application principale (UI + logique)
 ├── calendar_db.php         # Connexion à la base de données (non versionné)
 ├── calendar_db.example.php # Fichier de connexion à copier comme point de départ
-└── calendar_db.sql         # Schéma et données de démonstration
+└── dump-calendar_db.sql    # Export de la base de données
 ```
 
 ## Identification des utilisateurs
 
 Aucune connexion n'est requise. Chaque visiteur reçoit un identifiant aléatoire stocké dans un cookie (`calendar_user_id`, valable 2 ans). Cet identifiant est utilisé pour associer les événements à leur propriétaire et restreindre les droits de modification et de suppression.
+
